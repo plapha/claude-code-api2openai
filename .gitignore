@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.log
+.env
+.env.*
+.DS_Store
+.venv/
+venv/
+*.sqlite3
+*.db
+# Docker artifacts
+*.tar
+*.tar.gz
+*.zip
+# IDEs
+.vscode/
+.idea/

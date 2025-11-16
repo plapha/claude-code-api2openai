@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  claude-proxy:
+    build:
+      context: .
+    image: claude-proxy:latest
+    env_file:
+      - .env
+    ports:
+      - "5000:${PORT:-5000}"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:${PORT:-5000}/health || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
