@@ -29,7 +29,7 @@ A lightweight Flask + Gunicorn proxy that exposes OpenAI-compatible `/v1/chat/co
 ## Quick Start (local Python)
 1. Clone this repo and enter the folder:
    ```bash
-   git clone <your-fork-url> && cd claude_proxy_bundle
+   git clone https://github.com/plapha/claude-code-api2openai.git && cd claude_proxy_bundle
    ```
 2. Create a virtual environment and install dependencies:
    ```bash
